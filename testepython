@@ -1,0 +1,21 @@
+valor = float( input("Qual o valor do item a ser pago? "))
+print ("  ")
+print ("As formas de pagamento disponíveis são: ")
+print ("1 - À vista em dinheiro ou cheque. 10% de desconto")
+print ("2 - À vista no cartão de crédito. 5% de desconto")
+print ("3 - Em 2 vezes")
+print ("4 - Em 3 vezes. 10% de juros")
+
+condiçao = int (input ("Como deseja realizar o pagamento? "))
+while ((4 < condiçao) or (condiçao < 0)):
+  condiçao = int (input("Opção inválida! Insira um valor válido: "))
+if (condiçao == 1):
+  print ("O total a ser pago é de ", valor*0.9)
+elif (condiçao == 2):
+  print ("O total a ser pago é de ", valor*0.95)
+elif (condiçao == 3):
+  print ("O total a ser pago é de ", valor)
+elif (condiçao == 4):
+  print ("O total a ser pago é de ", valor*1.1)
+else:
+  print ("Forma de pagamento inválida")
